@@ -11,23 +11,38 @@ body {
   font-weight: 400;
   overflow-x: hidden; }
 
-.heading__main {
+.heading {
   font-family: Bitter;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 67px;
-  width: 634px;
-  height: 389px;
-  margin-bottom: 35px; }
+  text-align: center; }
+  .heading__main {
+    font-size: 48px;
+    line-height: 67px;
+    width: 634px;
+    height: 389px;
+    margin-bottom: 35px; }
+  .heading__quote {
+    font-size: 56px;
+    line-height: 78px;
+    color: #232A3F;
+    width: 1114px; }
+  .heading__offer {
+    color: #fff;
+    font-size: 64px;
+    margin-bottom: 69px; }
 
-.heading__quote {
-  font-family: Bitter;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 78.4px;
-  color: #232A3F;
-  width: 1114px; }
+.paragraph {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 50px;
+  width: 736px; }
+  .paragraph__sm {
+    font-size: 32px;
+    line-height: 45px; }
+  .paragraph__bg {
+    font-size: 40px;
+    line-height: 45px; }
 
 .text__red {
   color: #FF0035;
@@ -37,8 +52,18 @@ body {
   color: #FF0035;
   font-weight: 700; }
 
+.text__white--bold {
+  color: #fff;
+  font-weight: 700; }
+  .text__white--bold__lg {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px; }
+
 .text__black--bold {
   color: #000;
+  font-size: 40px;
   font-weight: 700; }
 
 .text__center {
@@ -51,6 +76,9 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #FF0035;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: capitalize;
   background: #FF0035;
   border-radius: 50px;
@@ -68,13 +96,24 @@ body {
 .btn__sm {
   font-size: 18px;
   line-height: 137.5%;
-  font-size: 18px;
-  padding: 18px 30px; }
+  height: 50px;
+  width: 175px; }
+
+.btn__lg {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 137.5%;
+  width: 626px;
+  height: 110px;
+  text-align: center; }
 
 .container {
   flex: 1;
   padding: 0 33px;
   max-width: 1120px; }
+
+.footer {
+  margin-top: 104px; }
 
 .navbar {
   display: flex;
@@ -124,8 +163,7 @@ body {
 
 #testimonial-section {
   display: flex;
-  justify-content: center;
-  margin-bottom: 247px; }
+  justify-content: center; }
 
 .testimonial {
   text-align: center; }
@@ -135,27 +173,59 @@ body {
     position: relative;
     display: block;
     margin: 65px auto 70px auto; }
-  .testimonial__text {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 50px;
-    line-height: 44.8px;
-    width: 736px; }
-    .testimonial__text--2 {
-      font-size: 40px;
-      width: 765px;
-      line-height: 50px; }
-    .testimonial__text--3 {
-      width: 736px; }
-    .testimonial__text--4 {
-      font-size: 40px;
-      line-height: 50px;
-      font-weight: 700; }
-    .testimonial__text:last-child {
-      margin-bottom: 64px; }
 
-#quote {
+.quote-section {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 247px;
   margin-bottom: 68px; }
+
+#regret {
+  height: 860px;
+  background-image: linear-gradient(to right bottom, rgba(25, 36, 61, 0.58), rgba(25, 36, 61, 0.58)), url("/pictures/regret-img.jpg");
+  color: #fff;
+  display: flex;
+  justify-content: center; }
+
+.regret__text {
+  margin-top: 94px; }
+
+#marketing {
+  height: 1361px;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(-250deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.26)), url("/pictures/marketing-img.jpg");
+  color: #fff;
+  display: flex;
+  justify-content: center; }
+
+.marketing__text {
+  margin-top: 121px; }
+
+.marketing__text > * {
+  width: 637px; }
+
+#offer-section {
+  height: 1480px;
+  display: flex;
+  justify-content: center;
+  background-color: #232A3F;
+  color: #fff; }
+
+.offer {
+  margin-top: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .offer__text {
+    width: 929px; }
+  .offer__btn {
+    width: 929px; }
+
+#footer__section {
+  display: flex;
+  justify-content: center;
+  height: 414px;
+  background: #F4F5F6; }
