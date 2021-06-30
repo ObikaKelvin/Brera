@@ -183,7 +183,7 @@ body {
 
 #regret {
   height: 860px;
-  background-image: linear-gradient(to right bottom, rgba(25, 36, 61, 0.58), rgba(25, 36, 61, 0.58)), url("/pictures/regret-img.jpg");
+  background-image: linear-gradient(to right bottom, rgba(25, 36, 61, 0.58), rgba(25, 36, 61, 0.58)), url("pictures/regret-img.jpg");
   color: #fff;
   display: flex;
   justify-content: center; }
@@ -195,7 +195,7 @@ body {
   height: 1361px;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(-250deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.26)), url("/pictures/marketing-img.jpg");
+  background-image: linear-gradient(-250deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.26)), url("pictures/marketing-img.jpg");
   color: #fff;
   display: flex;
   justify-content: center; }
